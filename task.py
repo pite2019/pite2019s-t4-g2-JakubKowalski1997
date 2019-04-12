@@ -40,7 +40,7 @@ class Matrix:
         self.dimention = int(sqrt(self.number_of_arguments))
         self.elements = [ [] for i in range(self.dimention)] 
         for i in range(self.dimention):
-            self.elements[i] = [ j for j in list_passsed[i*self.dimention : (i+1)* self.dimention ]]
+            self.elements[i] = [j for j in list_passsed[i * self.dimention : (i+1) * self.dimention]]
 
     def add(self, matrix_to_add):
         temp = []
@@ -49,7 +49,7 @@ class Matrix:
                 temp.append(self.elements[i][j] + matrix_to_add.elements[i][j])
         return Matrix(*temp)
 
-
+    
 def main():
     matrix_1 = Matrix(4,5,6,7)
     print(matrix_1.elements)
