@@ -33,7 +33,6 @@ class Matrix:
         if not sqrt(number_of_arguments).is_integer():
 	        raise Error ("Wrong size of array")
 
-
     def __init__(self, *list_passsed):
         self.number_of_arguments = len(list_passsed)
         Matrix.check_number_of_arguments(self.number_of_arguments)
